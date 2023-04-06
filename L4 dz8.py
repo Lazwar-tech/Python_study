@@ -1,6 +1,11 @@
-lst = [1, 3, 5]
+# lst = [1, 3, 5]
 # lst = [6]
-# lst = []
+lst = []
 
-result = sum(lst[::2]) * lst[-1]
+if lst:
+    result = sum(lst[::2]) * lst[-1]
+else:
+    result = 0
 print(result)
+
+
