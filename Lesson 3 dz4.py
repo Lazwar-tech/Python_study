@@ -12,8 +12,9 @@ elif sign == "*":
     c = a * b
     print(c)
 elif sign == "/":
-    if b == 0:
+    if not b:
         print("На ноль не делится")
     else:
         c = a / b
-        print(c)
+        if b:
+            print(c)
