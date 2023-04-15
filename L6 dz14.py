@@ -1,6 +1,6 @@
 digit = int(input("Ввести целое число: "))
 if digit <= 0:
-    print("Число не должно быть нулевым.")
+    print("Число не может быть нулевым.")
 else:
     digit_str = str(digit)
     result = 1
