@@ -5,7 +5,7 @@ def second_index(text, some_str):
     second = text.find(some_str, first_index + 1)
     if second == -1:
         return None
-    return second_index
+    return second
 
 
 assert second_index("sims", "s") == 3, 'Test1'
