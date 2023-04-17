@@ -5,9 +5,9 @@ else:
     days, seconds = divmod(seconds, 24 * 60 * 60)
     hours, seconds = divmod(seconds, 60 * 60)
     minutes, seconds = divmod(seconds, 60)
-    if days == 1:
+    if days % 10 == 1 and days != 11:
         days_str = "день"
-    elif days in [2, 3, 4]:
+    elif days % 10 in [2, 3, 4] and days not in [12, 13, 14]:
         days_str = "дня"
     else:
         days_str = "дней"
